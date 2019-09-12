@@ -1,0 +1,37 @@
+{
+  "name": "restful-blog-app",
+  "version": "1.0.0",
+  "description": "A simple blog app demonstrating restful routes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezekielolugbami/restful-routing.git"
+  },
+  "keywords": [
+    "blog",
+    "app",
+    "restful",
+    "routes",
+    "node",
+    "js",
+    "javascript",
+    "express",
+    "development",
+    "routing"
+  ],
+  "author": "Ezekiel Olugbami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezekielolugbami/restful-routing/issues"
+  },
+  "homepage": "https://github.com/ezekielolugbami/restful-routing#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.0"
+  }
+}
