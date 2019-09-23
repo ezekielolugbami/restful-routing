@@ -80,7 +80,23 @@ app.get("/blogs/:id", function(req, res){
             res.render("show", {blog: foundBlog});
         }
     })
-})
+});
+
+// Edit Route
+app.get("/blogs/:id/edit", function(req, res){
+    Blog.findById(req.params.id, function(err, foundBlog){
+        if(err){
+            res.redirect("/blogs");
+        } else {
+            res.render("edit", {blog: foundBlog});
+        }
+    })
+});
+
+// Update Route
+app.put("/blogs/:id", function(req, res){
+    res.send("Updated!");
+});
 
 
 
