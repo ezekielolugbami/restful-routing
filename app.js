@@ -107,7 +107,17 @@ app.put("/blogs/:id", function(req, res){
 });
 
 
-
+// Delete Route
+app.delete("/blogs/:id", function(req, res){
+    // destroy blog
+    Blog.findByIdAndRemove(req.params.id, function(err){
+        if(err){
+            res.redirect("/blogs");
+        } else {
+            res.redirect("/blogs")
+        }
+    });
+});
 
 
 
